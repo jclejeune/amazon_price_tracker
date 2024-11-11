@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' http://localhost:3000; script-src 'self' http://localhost:3000; connect-src 'self';">
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+    <title>Price Tracker</title>
+    </head>
+<body>
+    <div class="container">
+    <h1 className="text-xl font-medium text-black">Price Tracker</h1>
+    <form id="priceForm">
+        <div class="row">
+            <label for="find_objet_price" class="form-label">Entrez l'url d'un produit</label>
+            <input type="url" name="find_objet_price" id="find_objet_price">
+            <button type="submit" class="btn btn-info">Go!</button>
+            <div>
+                <p class="" id="result"></p>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="/axios.js"></script> -->
+    <script src="axios.js"></script>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
